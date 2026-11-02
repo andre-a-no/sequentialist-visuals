@@ -1,0 +1,22 @@
+# sequentialist-visuals
+
+> Read-only engineering views of search provenance and participant events.
+> Python 3.11+, standalone offline HTML/SVG, no mandatory third-party runtime dependencies.
+
+This is a curated Markdown reading index. It does not guarantee ingestion by any
+assistant, crawler or search service, and does not replace source/API checks.
+
+## Start here
+
+- [Plain-language overview and FAQ](docs/overview.md): inputs, outputs, noncoder workflow and limits.
+- [Обзор и частые вопросы на русском](docs/overview.ru.md): сценарии без программирования, входы/выходы и ограничения.
+- [README and examples](README.md): supported schemas and executable usage.
+- [Repository guidance](AGENTS.md): source map and proportionate verification commands.
+
+## Implementation evidence
+
+- [Public API](src/sequentialist/visuals/__init__.py): exported functions.
+- [Renderer source](src/sequentialist/visuals/render.py): validation, escaped output and layouts.
+- [Behavior tests](tests/test_render.py): security boundaries, references, isolation and causal semantics.
+- [Package metadata](pyproject.toml): actual distribution name and runtime requirements.
+- [License](LICENSE): AGPL-3.0-only license text.
